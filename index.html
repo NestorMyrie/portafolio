@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+<body>
+<!-- Nav Bar -->
+    <nav class="main_navbar">
+        <div class="container">
+            <img src="./src/imgs/icons/NestorMyrie_icon.svg" alt="NestorMyrie Logo">
+            <div>
+                <ul class="navbar_links">
+                    <li><a href="#">Quien soy?</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="main_header toTopGradient-primary">
+        <picture>
+            <source srcset="./src/imgs/background-desktop.png" media="(min-width:1024px)">
+            <source srcset="./src/imgs/background-tablet.png" media="(min-width:734px)">
+            <img src="./src//imgs//background-movile.png" alt="Background" class="header_bg">
+        </picture>
+
+        <div class="main_header__content">
+            <h1> <span>Nestor</span> Myrie <br> Frontend Developer<h1/>
+            <ul class="content__links">
+                <li><a href="#"><img src="./src/imgs/icons/codepen_icon.svg" alt=""></a></li>
+                <li><a href="#"><img src="./src/imgs/icons/githubicon.svg" alt=""></a></li>
+                <li><a href="#"><img src="./src/imgs/icons/tiktokicon.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- About me -->
+
+    <section class="aboutme_section container">
+
+        <div class="aboutme_section__avatar">
+           <div class="avatar-efect">
+            <img src="./src/imgs/avatar.png" alt="Avatar de Nestor">
+           </div>
+        </div>
+
+        <!--  -->
+<div class="aboutme_section__info">
+<h3>INFORMACION GENERAL</h3>
+<p>
+Soy  Nestor desarrollador frontend  autodidacta con 3 años de experiencia en maquetacion  y desarrollo web responsive. si bien aun no soy titulado universitario a lo largo de este tiempo me he capacitado en distintas plataformas como  EDTeam,  FreeCodeCamp, Udemy y Youtube por las cuale he aprendido las bases y logica de la programacion. <br> <br>
+He realizado varios proyectos tanto comerciales como propios los cuales la mayoria se encuentran en mi Github,
+</p>
+<div class="info__box">
+    <h4>Numeros</h4>
+    <ul>
+        <li><span>21</span><br> años</li>
+        <li><span>3</span><br> años de <br> experiencia</li>
+        <li><span>6</span><br> Proyectos <br> comerciales</li>
+
+    </ul>
+</div>
+
+<div class="info__box">
+    <h4>Numeros</h4>
+    <ul>
+        <li><img src="./src/imgs/icons/location.svg" alt="Imagen de ubicacion"><br> Costa Rica</li>
+        <li><img src="./src/imgs/icons/happy.svg" alt="Imagen de logo empatico"><br> Empatico</li>
+        <li><img src="./src/imgs/icons/trop.svg" alt="Imagen de trofeo"><br> Autodidacta</li>
+
+
+    </ul>
+</div>
+</div>
+    </section >
+
+
+    <!-- About Me -->
+<section class='main_skills toDownGradient-primary' >
+        
+<div class="container main_skills__content">
+<h3 class="title-gradient">SKILLS</h3>
+<div class="main_skills__cards">
+    <div class="skills__card">
+        <h3 class="skills__card__title">Frontend</h3>
+        <p>El desarrollo frontend es el proceso de diseñar y desarrollar la interfaz de usuario de un sitio web o una aplicación web.</p>
+            <ul class="skills__cards__skill">
+                <li>HTML5</li>
+                <li>PUG</li>
+                <li>Javascript</li>
+                <li>TypeScript</li>
+                <li>CSS</li>
+                <li>React js</li>
+            </ul>
+    </div>
+
+
+    <div class="skills__card">
+        <h3 class="skills__card__title">Backend</h3>
+        <p>Aunque esta no es mi area, cuento con conocimiento basico en las siguientes tecnologias</p>
+            <ul class="skills__cards__skill">
+                <li>NodeJs</li>
+                <li>Expres js</li>
+                <li>Mongodb</li>
+            </ul>
+    </div>
+
+
+    <div class="skills__card">
+        <h3 class="skills__card__title">Otras</h3>
+        <p>Herramientas utiles que utilizo normalmente para desarrollo </p>
+            <ul class="skills__cards__skill">
+                <li>GIT</li>
+                <li>Vs Code</li>
+                <li>Figma</li>
+                
+            </ul>
+    </div>
+</div>
+</div>
+    </section >
+    <!-- Services -->
+    <section class='main_services container toDownGradient-secundary'>
+        <div class="container main_services__info  ">
+            <h3 class="title-gradient">Servicios</h3>
+            <p>Sé Que Las Buenas Aplicaciones Significa Buen Negocio</p>
+        </div>
+        <div class="main_services__container" id="main_services__container">    
+            <!-- The Services card be render in ../src/js/services.js -->
+        </div>
+    </section>
+<!-- Proyects -->
+  <section class="main_proyects">
+  <div class="container">
+    <div class="main_proyects__header">
+        <h3 class="title-gradient">Proyectos</h3>
+        <p>En este apartado se encuentran alunos de los proyectos personales y comerciales que he realizado, cuento con algunos elementos maquetados en Codepen</p>
+        <ul class="proyects__header_sections" id="proyects__header_sections">
+            <li   class="activeProyects">TODOS</li>
+            <li name="frontend">FRONTEND</li>
+            <li name="backend">BACKEND</li>
+        </ul>
+    </div>
+    <div class="main_proyects_proyects" id="main_proyects_proyects">
+  
+        <!-- The proyect card be a render in ../src/js/proyect.js -->
+
+        
+        
+    </div>
+  </div>
+
+  </section>
+
+
+  <section></section>
+    <script src="./src/js/index.js" type="module"></script>
+</html>

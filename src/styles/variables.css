@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=Rajdhani:wght@700&family=Red+Rose:wght@400;500;700&family=Reem+Kufi:wght@500&family=Roboto:wght@500&display=swap');
+/* fonts
+Rajdhani
+Red Rose
+Reem Kufi
+Roboto
+Londrina Solid light
+*/
+
+:root{
+    /* colors */
+    --text-description:#dadadac5;
+    --text-enfasis:#E1359D;
+    --text-purple:#514BDA;
+    --primary-purple:#674BDD;
+    --secundary-purple:#7931A9;
+    --background-primary:#1E182F;
+    --background-secondary:#16141F;
+    --blue-light:#29B7E8;
+    --text-normal :white;
+    --bg-shadow: #14121D;
+    /* Fonts */
+--font-text: 'Roboto';
+--font-title:'Red Rose';
+--z-index-nav:10;
+--z-index-back:-1;
+--z-index-helper:5;
+--z-index-normal:1;
+--z-index-modal:100;
+/* Medidas */
+--size-desktop:1050px;
+--size-tablet:600px;
+--size-movil:640px;
+
+--radius-default:5px;
+
+--duration-default:400ms
+}

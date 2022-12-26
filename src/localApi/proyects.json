@@ -1,0 +1,41 @@
+{
+    "proyects": [
+        {
+            "img": "/src/imgs/portfolio.png",
+            "title": "Portafolio actual",
+            "desc": "Apple is developing the next several iterations of its M-series Apple silicon chips, and the chips coming in 2023 will be the 'M3' series, and will ",
+            "links": [
+                {
+                    "github": "url",
+                    "link": "url"
+                }
+            ],
+            "category":"frontend"
+        },
+        {
+            "img": "/src/imgs/puravidarafting.png",
+            "title": "Cr Pura vida Rafting",
+            "desc": "Pagina web Desarrollada Con wordpress, su proceso inicio desde la idea de proyecto, configuracion de webHosting y de Dominio",
+            "links": [
+                {
+                    "github": "url",
+                    "link": "url"
+                }
+            ],
+            "category":"backend"
+        },
+        {
+            "img": "/src/imgs/digitalocean.png",
+            "title": "Clon de Digital Ocean con tailwinds",
+            "desc": "Maquetado con Tailwind css en base a la carrera de desarrollo web de Ed team",
+            "links": 
+                {
+                    "github": "https://github.com/NestorMyrie/Digital-Ocean-ED",
+                    "link": "https://digital-ocean-ed.vercel.app/"
+                }
+            ,
+            "category":"frontend"
+        }
+        
+    ]
+}

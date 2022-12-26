@@ -1,0 +1,202 @@
+.main_proyects{
+
+    --height-img:10rem;
+    background-color: var(--background-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_proyects .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.proyects__header_sections{
+    display: flex;
+    justify-content:center;
+    margin-top: 3rem;
+    gap: 1.5rem;
+ 
+}
+.main_proyects__header p{
+    margin-block: .5rem;
+    text-align: center;
+}
+.proyects__header_sections li{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.proyects__header_sections li.activeProyects{
+    color: var(--secundary-purple);;
+position: relative
+}
+.proyects__header_sections li.activeProyects::after{
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    height: .4rem;
+    width: 100%;
+    background-color:var(--secundary-purple);
+    border-radius: var(--radius-default);
+    left: 0;
+    }
+
+.main_proyects_proyects{
+    display:grid;
+    grid-template-columns: 1fr;
+ justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+.main_proyects_proyects p, .main_proyects_proyects h4{
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.main_proyects_proyects .box__info__title{
+    color: white;
+    font-size: 1.2rem;
+    transition: background var(--duration-default) ;
+
+
+}
+.proyect_box__img{
+    width: 100%;
+    border-radius: 1.1rem 1.1rem 0 0;
+    height: var(--height-img);
+    object-fit: cover;
+   
+}
+
+.proyect_box{
+
+position: relative;
+    /* width: 80%; */
+    cursor: pointer;
+border-radius: 10px;
+height: 100%;
+
+z-index: 2;
+
+}
+.proyect_box__content{
+    position: relative;
+    background: #181A25;
+    border-radius: 1.1rem;
+    height: 100%;
+    
+}
+.proyect_box__content:hover::before{
+    background-image: linear-gradient(to bottom, var(--text-purple),var(--text-enfasis));
+    filter: grayscale(0%);
+
+}
+  .proyect_box:hover .box__info__title{
+ color: var(--text-enfasis);
+}
+.proyect_box:hover  .box__info_description{
+    color: white;
+}
+
+.proyect_box__content::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+background-image: linear-gradient(to bottom, var(--text-purple),var(--text-enfasis));
+filter: grayscale(100%);
+    border-radius: 1.1rem;
+   
+    position: absolute;
+    z-index: -1;
+    transform: scale(1.01);
+    transition: filter 300ms;
+}
+
+.proyect_box .proyect_box__info{
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+
+.proyect_box .box__info__title, .proyect_box .box__info_description{
+    transition: color var(--duration-default);
+}
+
+.proyect_box .box__content_boxLinks{
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.514);
+    width: 100%;
+    height: var( --height-img);
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity var(--duration-default);
+}
+
+.proyect_box .box__content_boxLinks a{
+background-color:rgba(0, 0, 0, 0.452);
+/* height: 3rem;
+width: 3rem; */
+padding: 1rem;
+border-radius: 50%;
+display: block;
+transition:opacity 300ms 300ms, transform 300ms ;
+transform: translateY(-1rem);
+opacity: 0;
+
+}
+.proyect_box:hover .box__content_boxLinks a{
+    transform: translateY(0rem);
+    opacity: 1;
+
+}
+.proyect_box:hover .box__content_boxLinks{
+    opacity: 1;
+}
+
+
+
+.proyect_box .box__content_boxLinks a:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width:640px){
+    .main_proyects_proyects{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .main_proyects_proyects .proyect_box{
+    width: 100%;
+    }
+}
+@media screen and (min-width:1050px){
+    .main_proyects_proyects{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .main_proyects_proyects .proyect_box{
+      
+    }
+    
+}
+
+.box__content_frontend, .box__content_backend{
+transition: transform 300ms, opacity 300ms;
+opacity: 1;
+
+}
+
+.box__content_frontend.hidden, .box__content_backend.hidden{
+transform: scale(0);
+
+}
+

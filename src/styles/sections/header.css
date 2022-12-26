@@ -1,0 +1,50 @@
+header.main_header{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+position: relative;
+margin-bottom: 6rem;
+}
+
+header.main_header img.header_bg{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: var(--z-index-back);
+}
+
+.main_header__content{
+    z-index: var(--z-index-normal);
+    text-align: center;
+
+}
+.main_header__content h1{
+    color:white;
+    font-family: 'Red Rose';
+    font-size: 3rem;
+    font-weight: 300;
+}
+.content__links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    
+}
+.main_header__content .content__links li{
+    padding: .3rem;
+    border: 1px solid white;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: grid;
+    place-content: center;
+}
+
+.main_header__content .content__links li img{
+    display: block;
+    margin: 0 auto;
+}

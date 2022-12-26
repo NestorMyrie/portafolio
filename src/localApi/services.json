@@ -1,0 +1,24 @@
+{
+    "services": [
+        {
+            "img": "./src/imgs/frontend.png",
+            "title": "Desarrollo web Frontent",
+            "desc": "Diseño, creación y modificación del contenido orientado al usuario de un sitio web. "
+        },
+        {
+            "img": "./src/imgs/backend.png",
+            "title": "Desarrollo web Backend",
+            "desc": "Implementacion de funciones como, registro de usuarios,  productos  o contenido. Formularios y almacenamiento de datos "
+        },
+        {
+            "img": "./src/imgs/mantenimiento.png",
+            "title": "Mantenimiento Web",
+            "desc": "mantener un sitio web en buen estado de funcionamiento.  verificando que todo funcione como debe y corrigiendo errores"
+        },
+        {
+            "img": "./src/imgs/workbanner.png",
+            "title": "Contrato",
+            "desc": "Buscas un desarrollador Frontend? llena el Formulario y me comunicare contigo lo antes posible!"
+        }
+    ]
+}

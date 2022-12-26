@@ -1,0 +1,95 @@
+.main_services__info p {
+text-align: center;
+}
+
+.main_services{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+.main_services__container{
+    display: flex;
+    
+    flex-direction: column;
+    gap: 2rem;
+
+    ;
+}
+.services__card{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    background-color: var(--background-secondary);
+    padding: 1rem;
+    border-radius: var(--radius-default);
+    text-align: center;
+
+}
+.services__card img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+
+border-radius: var(--radius-default)
+}
+
+.services__card h4{
+    font-family: "Reem Kufi";
+    color: white;
+
+}
+
+.services__card p{
+    font-family: "Londrina Solid" ;
+}
+
+
+
+@media screen and (min-width:600px) {
+    .main_services__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .main_services__container > div{
+        width: 50%;
+    }
+    .services__card{
+        background-color: transparent;
+
+    }
+
+}
+
+/* desktop */
+@media screen and (min-width:1050px) {
+    .main_services__container{
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0rem;
+
+}
+.main_services__container > div{
+    width: 25%;
+}
+.services__card{
+    background-color: transparent;
+}
+
+.services__card img{
+    height: 200px;
+}
+}
+
+
+
+
+.services_error{
+   background-color: rgba(255, 0, 0, 0.514);
+   padding: .3rem 1rem;
+   border-radius: var(--radius-default);
+   font-weight: bold;
+   font-family: 'Red Rose';
+}

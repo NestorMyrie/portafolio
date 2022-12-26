@@ -1,0 +1,52 @@
+.main_navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-index-nav);
+    padding-top: 2rem;
+
+    width: 100%;
+    display: none;
+}
+.main_navbar .container{
+    display: flex;
+    justify-content: space-between;
+    padding-inline:2rem;
+}
+
+.main_navbar .container .navbar_links{
+    display: flex;
+    gap: 1rem;
+}
+.navbar_links li a {
+    position: relative;
+    font-family: "Reem Kufi";
+    transition: color 300ms;
+    display: flex;
+    justify-content: center;
+ 
+}
+.navbar_links li a::before{
+content:"";
+position: absolute;
+bottom: -10%;
+background-color: var(--text-enfasis);
+height: .3rem;
+width: 0;
+border-radius: 6px;
+transition: all  500ms;
+transform-origin: center;
+}
+.navbar_links li:hover a{
+    color:var(--text-enfasis)
+}
+
+.navbar_links li:hover a:before{
+    width: 100%;
+}
+@media screen and (min-width: 734px ){
+    .main_navbar{
+        display: block;
+
+    }
+}
