@@ -1,0 +1,159 @@
+
+.main_contact .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main_contact__bannerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_contact__bannerInfo span:first-of-type{
+    background-color:#482367;
+    width: 100%;
+    height: 1rem;
+border-radius: 10px;
+margin-block:2rem;    
+position: relative;
+}
+
+.main_contact__bannerInfo span:first-of-type::after{
+content:"";
+height: 100%;
+width: 60%;
+position: absolute;
+background-color: #7931A9;
+border-radius: inherit;
+
+}
+
+.main_contact__bannerInfo p,.main_contact__bannerInfo h3{
+    color: white;
+    text-align:center;
+}
+.main_contact__bannerInfo h3{
+ 
+    font-family: 'Red Rose';
+
+}
+.main_contact__bannerInfo p{
+ 
+    font-family: 'Roboto';
+
+}
+.main_contact__form form{
+    display: flex;
+    flex-direction: column;
+   gap: 3rem;
+}
+.main_contact__form  form label input, .main_contact__form  form label textarea{
+    display: block;
+    margin-top: 1rem;
+    background: transparent;
+    width: 100%;
+    border: none;
+}
+label{
+    position: relative;
+    cursor:text;
+}
+label span.border{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+label span.border::after{
+    content: "";
+    width: 0%;
+    height: inherit;
+    background-color: var(--text-enfasis);
+    transition: width 300ms;
+}
+
+label span.border::before{
+content:attr(texto);
+top: -3.2rem;
+left: 0;
+position: absolute;
+transition:color 300ms ;
+
+
+}
+.main_contact__form  form label input[required] ~ span.border::before{
+    content: attr(texto)"*";
+
+}
+
+label input:focus ~ span.border::after{
+  width: 100%;
+}
+label input:focus ~ span.border::before{
+    color:var(--text-enfasis);
+}
+
+
+.main_contact__form  form label input, .main_contact__form  form label textarea{
+outline: none;
+    font-family:'Red Rose';
+    color: white;
+}
+
+.main_contact__form  form input[type=submit]{
+    background-color: var(--text-enfasis);
+    padding: 1rem 1rem;
+    border-radius: var(--radius-default);
+    cursor: pointer;
+    transition: var(--duration-default);
+
+}
+.main_contact__form  form input[type=submit]:hover{
+opacity: .7;
+}
+
+.main_contact__form  form label textarea{
+    border: 1px solid white;
+    resize: none;
+    height: 15rem;
+    border-radius: var(--radius-default);
+    padding: 2rem;
+    transition: border-color var(--duration-default);
+
+
+}
+.svg-form{
+    display: none;
+}
+.main_contact__form  form label textarea:focus{
+    border-color: var(--text-enfasis)
+}
+
+@media screen and (min-width:1050px){
+    .svg-form{
+        display: block;
+    }
+    .main_contact{
+        padding-top: 5rem;
+    }
+    .main_contact .container{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+.main_contact .container  .main_contact__bannerInfo{
+        width: 50%;
+    }
+    .main_contact .container .main_contact__form{
+        width: 50%;
+
+    }
+    .main_contact__form  form label textarea{
+        height: 10rem;
+    }
+
+}

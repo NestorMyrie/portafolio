@@ -5,6 +5,7 @@
 @import './sections/skills.css';
 @import './sections/services.css'; 
 @import './sections/proyects.css';
+@import './sections/contact.css';
 *{
     margin:0;
     padding: 0;

@@ -1,4 +1,3 @@
-
 const main_proyects_proyects = document.getElementById(
   "main_proyects_proyects"
 );
