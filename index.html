@@ -181,24 +181,27 @@ He realizado varios proyectos tanto comerciales como propios los cuales la mayor
             
       </div>
       <div class="main_contact__form">
-          <form action=""  >
+          <form  action="https://formspree.io/f/xyyagoqe"
+          method="POST" id="contact-form">
               <label>
-                  <input type="text" name="name">
+                  <input type="text" name="name" required>
                   <span class="border" texto="Nombre Completo"></span>
 
                 </label>
               <label>
-                  <input type="text" name="mail">
-                    <span class="border" texto="Correo Electronico"></span>
+                  <input type="text" name="mail" required>
+                    <span class="border" texto="Correo Electronico" ></span>
                 </label>
               <label>
-                  <input type="text" name="phone" required>
+                  <input type="number" name="phone" >
                   <span class="border" texto="Numero Telefonico"></span>
                 
                 </label>
-              <label>Mensaje
+                <label>Mensaje
                   <textarea type="text" name="mesage"></textarea>
               </label>
+              <p class="main_contact__form_error" id="Error Mesage">Porfavor completa correctamente los campos en rojo</p>
+
               <input type="submit" value="Enviar">
           </form>
           </div>

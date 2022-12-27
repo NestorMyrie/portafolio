@@ -155,5 +155,17 @@ opacity: .7;
     .main_contact__form  form label textarea{
         height: 10rem;
     }
+    .main_contact__form  form input[type=submit]{
+        display: inline-block;
+        align-self: flex-end;
+        padding: 1rem 4rem;
+    }
 
+}
+.main_contact__form_error{
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    padding: .5rem 2rem;
+    background: rgba(255, 0, 0, 0.381);
 }
