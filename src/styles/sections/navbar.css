@@ -1,52 +1,192 @@
-.main_navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: var(--z-index-nav);
-    padding-top: 2rem;
+@media screen and (max-width:734px){
+    
 
-    width: 100%;
-    display: none;
-}
-.main_navbar .container{
-    display: flex;
-    justify-content: space-between;
-    padding-inline:2rem;
-}
 
-.main_navbar .container .navbar_links{
-    display: flex;
-    gap: 1rem;
-}
-.navbar_links li a {
-    position: relative;
-    font-family: "Reem Kufi";
-    transition: color 300ms;
-    display: flex;
-    justify-content: center;
- 
-}
-.navbar_links li a::before{
-content:"";
-position: absolute;
-bottom: -10%;
-background-color: var(--text-enfasis);
-height: .3rem;
-width: 0;
-border-radius: 6px;
-transition: all  500ms;
-transform-origin: center;
-}
-.navbar_links li:hover a{
-    color:var(--text-enfasis)
-}
 
-.navbar_links li:hover a:before{
-    width: 100%;
-}
-@media screen and (min-width: 734px ){
     .main_navbar{
+        
+        position: fixed;
+        bottom: 0;
+        z-index: var(--z-index-nav);
+        padding-block: 2rem;
+        background-color: var(--bg-blue-dark);
+    border-radius: 30px 30px 0px 0px;
+
+    
+        width: 100%;
+        
+    }
+    .main_navbar .container > img{
+        display: none;
+    }
+    
+    .main_navbar .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline:2rem;
+    }
+    
+    .main_navbar .container .navbar_links{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 1rem;
+    }
+    .navbar_links li a {
+        position: relative;
+        font-family: "Reem Kufi";
+        transition: color 300ms;
+        display: flex;
+        justify-content: center;
+     font-size: .8rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+
+ 
+
+
+    /*  */
+    .navbar_links li a::before{
+    content:"";
+    position: absolute;
+    bottom: -10%;
+    background-color: var(--text-enfasis);
+    height: .3rem;
+    width: 0;
+    border-radius: 6px;
+    transition: all  500ms;
+    transform-origin: center;
+    }
+ 
+
+    .navbar_links li a span{
+        display:none ;
+    }
+    .main_navbar .container > div{
+        width: 100%;
+    }
+    .navbar_links li{
+        padding: .7rem;
+        
+        border-radius: 50%;
+        transition: background 300ms, box-shadow 300ms;
+    }
+    .navbar_links li a img{
         display: block;
+     height: 1.5rem;
+     width: 1.5rem;
+    }
+
+  .navbar_links li.active{
+    background: #514BDA;
+    box-shadow: 0px 0px 0px 10px #524bdab5 ;
+    }
+    
+    /* .navbar_links li:hover a:before, .navbar_links li.active a::before{
+        width: 100%;
+    } */
+
+}
+
+@media screen and (min-width: 734px ){
+    
+    .navbar_links li a img{
+        display: none;
+    }
+
+    .navbar_links li:hover a span, .navbar_links li.active a span{
+        color:var(--text-enfasis)
+    }
+    
+    .navbar_links li:hover a:before, .navbar_links li.active a::before{
+        width: 100%;
+    }
+
+
+    .main_navbar{
+  
+        transition: background 400ms;
 
     }
+    .main_navbar.active{
+        background: rgba(0, 0, 0, 0.523);
+    }
+
+
+    .main_navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: var(--z-index-nav);
+        padding-block: 1rem;
+    
+        width: 100%;
+        
+    }
+    .main_navbar .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline:2rem;
+    }
+    
+    .main_navbar .container .navbar_links{
+        display: flex;
+        gap: 1rem;
+    }
+    .navbar_links li a {
+        position: relative;
+        font-family: "Reem Kufi";
+        transition: color 300ms;
+        display: flex;
+        justify-content: center;
+     
+    }
+    .navbar_links li a::before{
+    content:"";
+    position: absolute;
+    bottom: -10%;
+    background-color: var(--text-enfasis);
+    height: .3rem;
+    width: 0;
+    border-radius: 6px;
+    transition: all  500ms;
+    transform-origin: center;
+    }
+    .navbar_links li:hover a, .navbar_links li.active a{
+        color:var(--text-enfasis)
+    }
+    
+    .navbar_links li:hover a:before, .navbar_links li.active a::before{
+        width: 100%;
+    }
+    
+    
 }
+
+/* responsive Menu */
+
+/* 
+.navbar_responsive{
+position: fixed;
+width: 100%;
+background-color: var( --bg-blue-dark);
+bottom:0;
+z-index: var(--z-index-nav);
+gap: 1rem;
+}
+.navbar_links_responsive{
+    padding-block: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 734px ){
+    .navbar_links_responsive{
+        display: none
+    }
+     
+} */

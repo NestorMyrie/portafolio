@@ -27,8 +27,8 @@
 }
 .proyects__header_sections li{
     color: white;
-    font-weight: bold;
     cursor: pointer;
+    font-family: 'Roboto';
     transition: color 300ms;
 }
 .proyects__header_sections li.activeProyects{

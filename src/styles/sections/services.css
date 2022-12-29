@@ -3,6 +3,7 @@ text-align: center;
 }
 
 .main_services{
+    
     display: flex;
     justify-content: center;
     flex-direction: column;

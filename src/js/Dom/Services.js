@@ -1,4 +1,5 @@
-
+addEventListener('load',() => {
+  
 
 const main_services__container = document.getElementById(
   "main_services__container"
@@ -53,3 +54,4 @@ const printServices= (targett) => {
   .catch(error=>targett.appendChild(errorMessage))
 }
 printServices(main_services__container)
+})

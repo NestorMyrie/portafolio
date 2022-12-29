@@ -1,109 +1,56 @@
 @import './variables.css';
+@import url('./defaultStyles.css');
 @import './sections/header.css';
 @import './sections/navbar.css';
 @import './sections/aboutme.css';
 @import './sections/skills.css';
-@import './sections/services.css'; 
+@import './sections/services.css';
 @import './sections/proyects.css';
 @import './sections/contact.css';
-*{
-    margin:0;
-    padding: 0;
-    color:var( --text-description);
-    box-sizing: border-box;
-}
-body{
-    background: var(--background-primary);
-    overflow-x: hidden;
 
-}
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-.container{
-    max-width:90%;
-    /* padding-inline: 2rem; */
-    margin: 0 auto;
-    /* border: 1px solid red; */
-}
-
-@media screen and (min-width:1050px){
-.container {
-    max-width: 1300px;
-}
-}
-section{
-    min-height: 60vh;
-    padding-block: 2rem;
-    
-}
+/* section separarion gradiant */
 
 
-
-.toDownGradient_primary,.toTopGradient-primary, .toDownGradient-secundary,.toTopGradient-secundary{
+.toDownGradient-secundary,
+.toUpGradiant-primary,
+.toDownGradient-primary {
     position: relative;
-} 
 
-/* 1E182F */
-.toTopGradient-primary::after{
-    background-image: linear-gradient(to top, var(--background-primary) ,transparent);
-    bottom: 0;
 }
 
-
-.toDownGradient_primary::after, 
+.toDownGradient-primary::after,
 .toDownGradient-secundary::after,
-.toTopGradient-primary::after,
-.toTopGradient-secundary::after,
-.toDownGradient-primary::after
-{
+.toUpGradiant-primary::after {
     content: "";
-    width: 100vw;
-    height: 3rem;
     position: absolute;
-    /* border: 1px solid red; */
-}
-
-
-
-
-
-
-.toDownGradient-primary::after{
-    background-image: linear-gradient(to bottom, var(--background-primary) ,transparent);
-   top: 0;
-}
-
-
-.toDownGradient-secundary::after{
-    background-image: linear-gradient(to bottom, var( --background-secondary) ,transparent);
+    height: 30px;
     top: 0;
+    width: 100%;
+    /* z-index: var(--z-index-back); */
+}
 
+.toDownGradient-secundary::after {
+    background-image: linear-gradient(to bottom, var(--background-secondary), transparent);
+}
+
+.toDownGradient-primary::after {
+
+    background-image: linear-gradient(to bottom, var(--background-primary), transparent);
 }
 
 
-/* .toTopGradient-secundary::after{
-    background-image: linear-gradient(to bottom, var(--background-secundary) ,transparent);
-    top: 0;
-}
+.toUpGradiant-primary::after {
+    background-image: linear-gradient(to top, var(--background-primary), transparent);
 
-
-.toTopGradient_primary::after{
-    background-image: linear-gradient(to bottom, var(--background-secundary) ,transparent);
-    top: 0;
+    top: auto;
+    bottom: 0;
 
 }
- */
 
-
-
-.title-gradient{
+.title-gradient {
     text-align: center;
     font-family: 'Red Rose';
-    background-image: linear-gradient(to left,#FE3D80 50%,#BC0B94 80%);
+    background-image: linear-gradient(to left, #FE3D80 50%, #BC0B94 80%);
     font-size: 2.3rem;
     color: transparent;
     -webkit-background-clip: text;

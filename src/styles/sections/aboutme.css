@@ -8,6 +8,9 @@
     justify-content: center;
 
 }
+.aboutme_section div:nth-child(1){
+    width: 40%;
+}
 
 
 .aboutme_section div:nth-child(1), .aboutme_section{

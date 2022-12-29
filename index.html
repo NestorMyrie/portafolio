@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,29 +10,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./src/styles/index.css">
+  <script src="./src/js/index.js" type="module"></script>
+
 </head>
 <body>
 <!-- Nav Bar -->
-    <nav class="main_navbar">
-        <div class="container">
-            <img src="./src/imgs/icons/NestorMyrie_icon.svg" alt="NestorMyrie Logo">
-            <div>
-                <ul class="navbar_links">
-                    <li><a href="#">Quien soy?</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<nav class="main_navbar" id="main_navbar">
+    <div class="container">
+      <img src="./src/imgs/icons/NestorMyrie_icon.svg" alt="NestorMyrie Logo">
+      <div>
+        <ul class="navbar_links" id="links">
+          <li>
+            <a href="#aboutme">
+           <img src="./src/imgs/icons/me.svg" alt="">
+            <span>Quien soy?</span></a>
+          </li>
+          <li>
+          
+            <a href="#skills">
+                <img src="./src/imgs/icons/skills.svg" alt="">
+            <span>Skills</span></a>
+          </li>
+          <li>
+           
+            <a href="#services">
+                <img src="./src/imgs/icons/services.svg" alt="">
+                <span>Servicios</span></a>
+          </li>
+          <li>
+           
+            <a href="#proyects">
+                <img src="./src/imgs/icons/proyects.svg" alt="">
+                <span>Proyectos</span>
+            </a>
+          </li>
+          <li>
+           
+            <a href="#contact">
+                <img src="./src/imgs/icons/contact.svg" alt="">
+                <span>Contacto</span></a>
+          
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
     <!-- Header -->
-    <header class="main_header toTopGradient-primary">
+    <header class="main_header toUpGradiant-primary ">
         <picture>
             <source srcset="./src/imgs/background-desktop.png" media="(min-width:1024px)">
             <source srcset="./src/imgs/background-tablet.png" media="(min-width:734px)">
-            <img src="./src//imgs//background-movile.png" alt="Background" class="header_bg">
+            <img src="./src//imgs/background-movile.png" alt="Background" class="header_bg">
         </picture>
 
         <div class="main_header__content">
@@ -43,7 +76,7 @@
 
     <!-- About me -->
 
-    <section class="aboutme_section container">
+    <section class="aboutme_section container" id="aboutme">
 
         <div class="aboutme_section__avatar">
            <div class="avatar-efect">
@@ -55,8 +88,12 @@
 <div class="aboutme_section__info">
 <h3>INFORMACION GENERAL</h3>
 <p>
-Soy  Nestor desarrollador frontend  autodidacta con 3 años de experiencia en maquetacion  y desarrollo web responsive. si bien aun no soy titulado universitario a lo largo de este tiempo me he capacitado en distintas plataformas como  EDTeam,  FreeCodeCamp, Udemy y Youtube por las cuale he aprendido las bases y logica de la programacion. <br> <br>
-He realizado varios proyectos tanto comerciales como propios los cuales la mayoria se encuentran en mi Github,
+    Soy  Néstor desarrollador frontend  autodidacta con 3 años de experiencia en maquetación  
+    y desarrollo web responsive. Si bien aún no soy titulado universitario, a lo largo de este 
+    tiempo me he capacitado en distintas plataformas como <a href="https://app.ed.team/u/nestormyriezamora/certificados" target="_blank"> EDTeam</a>, 
+    <a href="https://www.freecodecamp.org/fcce3bfbdbf-e527-4948-b267-81d114909f32" target="_blank"> FreeCodeCamp</a>,
+    Udemy y YouTube por las cuales he aprendido las bases y lógica de la programación. <br> <br>
+    He realizado varios proyectos tanto comerciales como propios los cuales la mayoría se encuentran en mi <a href="">Github</a>,
 </p>
 <div class="info__box">
     <h4>Numeros</h4>
@@ -69,7 +106,7 @@ He realizado varios proyectos tanto comerciales como propios los cuales la mayor
 </div>
 
 <div class="info__box">
-    <h4>Numeros</h4>
+    <h4>Datos</h4>
     <ul>
         <li><img src="./src/imgs/icons/location.svg" alt="Imagen de ubicacion"><br> Costa Rica</li>
         <li><img src="./src/imgs/icons/happy.svg" alt="Imagen de logo empatico"><br> Empatico</li>
@@ -82,8 +119,8 @@ He realizado varios proyectos tanto comerciales como propios los cuales la mayor
     </section >
 
 
-    <!-- About Me -->
-<section class='main_skills toDownGradient-primary' >
+    <!-- skills -->
+<section class='main_skills toDownGradient-primary' id="skills" >
         
 <div class="container main_skills__content">
 <h3 class="title-gradient">SKILLS</h3>
@@ -125,19 +162,25 @@ He realizado varios proyectos tanto comerciales como propios los cuales la mayor
     </div>
 </div>
 </div>
-    </section >
+   
+
+
+
+</section >
     <!-- Services -->
-    <section class='main_services container toDownGradient-secundary'>
-        <div class="container main_services__info  ">
+    <section class='main_services  toDownGradient-secundary' id="services">
+      <div class="container">
+        <div class=" main_services__info  ">
             <h3 class="title-gradient">Servicios</h3>
             <p>Sé Que Las Buenas Aplicaciones Significa Buen Negocio</p>
         </div>
         <div class="main_services__container" id="main_services__container">    
             <!-- The Services card be render in ../src/js/services.js -->
         </div>
+      </div>
     </section>
 <!-- Proyects -->
-  <section class="main_proyects">
+  <section class="main_proyects  toDownGradient-primary" id="proyects">
   <div class="container">
     <div class="main_proyects__header">
         <h3 class="title-gradient">Proyectos</h3>
@@ -156,9 +199,7 @@ He realizado varios proyectos tanto comerciales como propios los cuales la mayor
   </section>
 
 <!-- Form Contact -->
-
-
-<section class="main_contact">
+<section class="main_contact toDownGradient-secundary " id="contact">
     <div class="container">
       <div class="main_contact__bannerInfo">
           <h3>¿Quieres un nuevo sitio web que se vea bien y con un estilo unico?        </h3>
@@ -184,23 +225,23 @@ He realizado varios proyectos tanto comerciales como propios los cuales la mayor
           <form  action="https://formspree.io/f/xyyagoqe"
           method="POST" id="contact-form">
               <label>
-                  <input type="text" name="name" required>
+                  <input type="text" name="name" value="myrienestor@gmail.com" required>
                   <span class="border" texto="Nombre Completo"></span>
 
                 </label>
               <label>
-                  <input type="text" name="mail" required>
+                  <input type="text" name="mail" value="myrienestor@gmail.com" required>
                     <span class="border" texto="Correo Electronico" ></span>
                 </label>
               <label>
-                  <input type="number" name="phone" >
+                  <input type="number" name="phone" value="87878787" >
                   <span class="border" texto="Numero Telefonico"></span>
                 
                 </label>
                 <label>Mensaje
-                  <textarea type="text" name="mesage"></textarea>
+                  <textarea type="text" name="mesage" vaalue="myrienestor@gmail.commyrienestor@gmail.com"></textarea>
               </label>
-              <p class="main_contact__form_error" id="Error Mesage">Porfavor completa correctamente los campos en rojo</p>
+              <p class="main_contact__form_error" id="Error_Mesage">Porfavor completa correctamente los campos en rojo</p>
 
               <input type="submit" value="Enviar">
           </form>
@@ -209,6 +250,5 @@ He realizado varios proyectos tanto comerciales como propios los cuales la mayor
     </section>
 
 
-  <script src="./src/js/index.js" type="module"></script>
 
 </html>

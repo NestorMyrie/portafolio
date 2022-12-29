@@ -1,6 +1,7 @@
 header.main_header{
     height: 80vh;
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,10 +37,11 @@ header.main_header img.header_bg{
     
 }
 .main_header__content .content__links li{
-    padding: .3rem;
+    padding: .6rem;
     border: 1px solid white;
     width: 2.2rem;
     height: 2.2rem;
+    border-radius: 5px;
     display: grid;
     place-content: center;
 }
@@ -47,4 +49,7 @@ header.main_header img.header_bg{
 .main_header__content .content__links li img{
     display: block;
     margin: 0 auto;
+}
+.main_header__content h1 span{
+    color: var( --text-enfasis);
 }
