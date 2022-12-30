@@ -1,5 +1,6 @@
 @import './variables.css';
-@import url('./defaultStyles.css');
+@import './defaultStyles.css';
+
 @import './sections/header.css';
 @import './sections/navbar.css';
 @import './sections/aboutme.css';
@@ -7,6 +8,8 @@
 @import './sections/services.css';
 @import './sections/proyects.css';
 @import './sections/contact.css';
+@import './sections/loader.css';
+
 
 /* section separarion gradiant */
 
