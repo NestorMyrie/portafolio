@@ -1,0 +1,53 @@
+.loader{
+ 
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:var(--background-primary);
+    z-index: var(--z-index-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 300ms;
+    flex-direction: column;
+
+}
+ .loader__logo svg{
+height: 100px !important;
+width: 100px;
+}
+.loader__logo svg path{
+    fill: transparent;
+    stroke: var(--primary-purple);
+    animation: loading 3s infinite  alternate ;
+    stroke-dasharray: 140;
+    stroke-dashoffset: 140;
+}
+.loader__info{
+    display: flex;
+}
+.loader__info  span{
+
+letter-spacing: .3rem;
+animation: jumpLetter 1s var(--moveLettersTime) infinite alternate;
+}
+
+@keyframes jumpLetter{
+ 
+    to{
+        transform:translateY(30px);
+        color: white;
+
+    }
+}
+
+@keyframes loading{
+ to{
+    fill: var(--text-enfasis);
+    stroke-width: 1;
+        stroke-dashoffset: 0;
+    }
+  
+}
