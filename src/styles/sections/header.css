@@ -21,11 +21,11 @@ header.main_header img.header_bg{
 .main_header__content{
     z-index: var(--z-index-normal);
     text-align: center;
-
+font-family: 'Courier New', Courier, monospace;
 }
 .main_header__content h1{
     color:white;
-    font-family: 'Red Rose';
+    font-family: var(--font-red-rose);
     font-size: 3rem;
     font-weight: 300;
 }

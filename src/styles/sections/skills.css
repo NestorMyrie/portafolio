@@ -26,7 +26,7 @@
 
 .skills__card__title {
     color: var(--text-purple);
-    font-family: 'Rajdhani';
+    font-family: var(--font-Rajdhani);
     font-size: 1.5rem;
 }
 
@@ -42,7 +42,7 @@ ul.skills__cards__skill li {
     background-color: var(--background-primary);
     border-radius: var(--radius-default);
     color: var(--text-purple);
-    font-family: "Londrina Solid";
+    font-family: var(--font-Londrina-Solid);
 
 }
 

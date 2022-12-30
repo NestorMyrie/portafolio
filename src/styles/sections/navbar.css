@@ -37,7 +37,7 @@
 
     .navbar_links li a {
         position: relative;
-        font-family: "Reem Kufi";
+        font-family: var(--font-Reem-Kufi);
         transition: color 300ms;
         display: flex;
         justify-content: center;
@@ -149,7 +149,7 @@
 
     .navbar_links li a {
         position: relative;
-        font-family: "Reem Kufi";
+        font-family: var(--font-Reem-Kufi);
         transition: color 300ms;
         display: flex;
         justify-content: center;

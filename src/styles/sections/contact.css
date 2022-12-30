@@ -38,13 +38,13 @@
 
 .main_contact__bannerInfo h3 {
 
-    font-family: 'Red Rose';
+    font-family: var(--font-red-rose);
 
 }
 
 .main_contact__bannerInfo p {
 
-    font-family: 'Roboto';
+    font-family: var(--font-text);
 
 }
 
@@ -126,7 +126,7 @@ label input:focus~span.border::before {
 .main_contact__form form label input,
 .main_contact__form form label textarea {
     outline: none;
-    font-family: 'Red Rose';
+    font-family: var(--font-red-rose);
     color: white;
 }
 

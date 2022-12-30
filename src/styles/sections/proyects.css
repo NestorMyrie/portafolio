@@ -31,7 +31,7 @@
 .proyects__header_sections li {
     color: white;
     cursor: pointer;
-    font-family: 'Roboto';
+    font-family: var(--text);
     transition: color 300ms;
 }
 
@@ -71,7 +71,7 @@
 .main_proyects_proyects p,
 .main_proyects_proyects h4 {
     text-align: center;
-    font-family: "Roboto";
+    font-family: var(--font-text);
 }
 
 .main_proyects_proyects .box__info__title {

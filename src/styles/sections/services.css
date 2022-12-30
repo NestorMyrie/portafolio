@@ -40,13 +40,13 @@
 }
 
 .services__card h4 {
-    font-family: "Reem Kufi";
+    font-family: var(--Reem-Kufi);
     color: white;
 
 }
 
 .services__card p {
-    font-family: "Londrina Solid";
+    font-family: var(--font-Londrina-Solid);
 }
 
 

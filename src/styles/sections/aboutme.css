@@ -22,7 +22,7 @@
 
 .aboutme_section div:nth-child(2) h3 {
     color: var(--text-enfasis);
-    font-family: 'Red Rose';
+    font-family: var(--font-red-rose);
     font-size: 1.5rem;
 
 }
@@ -61,7 +61,7 @@
 
 .info__box h4 {
     color: var(--secundary-purple);
-    font-family: "Rajdhani";
+    font-family: var(--font-Rajdhani);
     font-size: 1.3rem;
     border-bottom: .3rem solid var(--secundary-purple);
 }

@@ -12,7 +12,7 @@ html {
 }
 
 p {
-    font-family: 'Roboto';
+    font-family: var(--font-text);
 }
 
 body {
