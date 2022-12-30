@@ -1,24 +1,26 @@
 .main_services__info p {
-text-align: center;
+    text-align: center;
 }
 
-.main_services{
-    
+.main_services {
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap:2rem;
+    gap: 2rem;
 }
-.main_services__container{
+
+.main_services__container {
     display: flex;
-    
+
     flex-direction: column;
     gap: 2rem;
 
     ;
 }
-.services__card{
+
+.services__card {
     display: flex;
     flex-direction: column;
     gap: .3rem;
@@ -28,36 +30,39 @@ text-align: center;
     text-align: center;
 
 }
-.services__card img{
+
+.services__card img {
     height: 150px;
     width: 100%;
     object-fit: cover;
 
-border-radius: var(--radius-default)
+    border-radius: var(--radius-default)
 }
 
-.services__card h4{
+.services__card h4 {
     font-family: "Reem Kufi";
     color: white;
 
 }
 
-.services__card p{
-    font-family: "Londrina Solid" ;
+.services__card p {
+    font-family: "Londrina Solid";
 }
 
 
 
 @media screen and (min-width:600px) {
-    .main_services__container{
+    .main_services__container {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0;
     }
-    .main_services__container > div{
+
+    .main_services__container>div {
         width: 50%;
     }
-    .services__card{
+
+    .services__card {
         background-color: transparent;
 
     }
@@ -66,31 +71,33 @@ border-radius: var(--radius-default)
 
 /* desktop */
 @media screen and (min-width:1050px) {
-    .main_services__container{
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 0rem;
+    .main_services__container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0rem;
 
+    }
+
+    .main_services__container>div {
+        width: 25%;
+    }
+
+    .services__card {
+        background-color: transparent;
+    }
+
+    .services__card img {
+        height: 200px;
+    }
 }
-.main_services__container > div{
-    width: 25%;
-}
-.services__card{
-    background-color: transparent;
-}
-
-.services__card img{
-    height: 200px;
-}
-}
 
 
 
 
-.services_error{
-   background-color: rgba(255, 0, 0, 0.514);
-   padding: .3rem 1rem;
-   border-radius: var(--radius-default);
-   font-weight: bold;
-   font-family: 'Red Rose';
+.services_error {
+    background-color: rgba(255, 0, 0, 0.514);
+    padding: .3rem 1rem;
+    border-radius: var(--radius-default);
+    font-weight: bold;
+    font-family: 'Red Rose';
 }

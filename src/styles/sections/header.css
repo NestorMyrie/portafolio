@@ -37,13 +37,14 @@ header.main_header img.header_bg{
     
 }
 .main_header__content .content__links li{
-    padding: .6rem;
+    padding: 1.2rem;
     border: 1px solid white;
     width: 2.2rem;
     height: 2.2rem;
     border-radius: 5px;
     display: grid;
     place-content: center;
+    transition: background 300ms, border 300ms;
 }
 
 .main_header__content .content__links li img{
@@ -52,4 +53,9 @@ header.main_header img.header_bg{
 }
 .main_header__content h1 span{
     color: var( --text-enfasis);
+}
+@media screen and (min-width:1050px) {
+    .main_header__content .content__links li:hover{
+        background-color:var(--text-enfasis);
+    }
 }

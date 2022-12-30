@@ -1,5 +1,4 @@
-addEventListener("load",() => {
-const main_navbar = document.getElementById("main_navbar");  
+const main_navbar = document.getElementById("main_navbar");
 const links = Array.from(document.querySelectorAll("#links li "));
 const sections = Array.from(document.getElementsByTagName("section"));
 const ismatchResponsive = matchMedia("(min-width:1050px)");
@@ -8,71 +7,59 @@ let intersection_options = {
   root: null,
   rootMargin: "0px",
 
-  threshold: ismatchResponsive.matches?.5:.2
+  threshold: ismatchResponsive.matches ? 0.5 : 0.2,
 };
 
-  // isResponsive(ismatchResponsive);
+scrollWaitChanges(ismatchResponsive);
 
-  scrollWaitChanges(ismatchResponsive)
+activeColorNavItems(intersection_options);
 
-  activeColorNavItems(intersection_options)
+function activeColorNavItems(options) {
+  const intersectionCallback = (data) => {
+    if (data[0].isIntersecting) {
+      sections.map((element, position) => {
+        if (element === data[0].target) {
+          links[position].classList.add("active");
+        } else {
+          links[position].classList.remove("active");
+        }
+      });
+    }
+  };
 
-  function activeColorNavItems(options){
-    const intersectionCallback = (data) => {
-      if (data[0].isIntersecting) {
-        sections.map((element, position) => {
-          if (element === data[0].target) {
-            console.log(element,'esta en foco')
-            links[position].classList.add("active");
-          } else {
-            links[position].classList.remove("active");
-            console.log(element,'NO esta en foco')
-
-          }
-        });
-      }
-    };
-    
-    let observe = new IntersectionObserver(
-      intersectionCallback,
-      options
-    );
-    // Observamos todas las sections
-    sections.map((e, i) => {
-      observe.observe(e);
-    });
-    
+  let observe = new IntersectionObserver(intersectionCallback, options);
+  // Observamos todas las sections
+  sections.map((e, i) => {
+    observe.observe(e);
+  });
 }
-})
 
 //verificamos si es responsive, en caso que o igual asignamos los cambios en caso que se
 //escale la pantalla
 
-
-
-function scrollWaitChanges(mediaquery){
-  if( mediaquery.matches){
-    scrollOpacityEfect()
-  }else{
-    mediaquery.addEventListener('change',() => {
-      if( mediaquery.matches){
-        scrollOpacityEfect()
+function scrollWaitChanges(mediaquery) {
+  if (mediaquery.matches) {
+    scrollOpacityEfect();
+  } else {
+    mediaquery.addEventListener("change", () => {
+      if (mediaquery.matches) {
+        scrollOpacityEfect();
       }
-    })
-  }  
+    });
+  }
 }
 
-function scrollOpacityEfect(){
+function scrollOpacityEfect() {
   addEventListener("scroll", (event) => {
-       //si esta en responsive agregaremos el evento scroll que verificara si hicimos scroll
+    //si esta en responsive agregaremos el evento scroll que verificara si hicimos scroll
     //hacia abajo, si es asi agregamos active al navbar,
     //resimido en un ternario
-  
-    document.body.getBoundingClientRect().y < -400?  main_navbar.classList.add("active"):main_navbar.classList.remove("active");
+
+    document.body.getBoundingClientRect().y < -400
+      ? main_navbar.classList.add("active")
+      : main_navbar.classList.remove("active");
   });
 }
-
-
 
 /**
  * Que logica aplique?
