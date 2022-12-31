@@ -18,22 +18,22 @@ async function handleSubmid(event) {
   const nameVerification = borderIfNot(
     name.value.length > 3,
     name,
-    "Porfavor proporciona un Nombre valido"
+    "Por favor proporciona un Nombre válido"
   );
   const mailVerification = borderIfNot(
     isEmail(mail.value),
     mail,
-    "Porfavor proporciona un Email valido"
+    "Por favor proporciona un Email válido"
   );
   const phoneVerification = borderIfNot(
     phone.value.length == 0 || phone.value.length > 7,
     phone,
-    "Porfavor proporciona un Numero valido (el campo no es obligatorio)"
+    "Por favor proporciona un Número válido (el campo no es obligatorio)"
   );
   const mesageVerification = borderIfNot(
     mesage.value.length == 0 || mesage.value.length > 7,
     mesage,
-    "Porfavor proporciona un mensaje valido (el campo no es obligatorio)"
+    "Por favor proporciona un mensaje válido (el campo no es obligatorio)"
   );
 
   // const messageVerification = borderIfNot(

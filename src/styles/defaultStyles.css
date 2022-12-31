@@ -7,6 +7,9 @@
 
 }
 
+::selection{
+    background-color: var( --primary-purple)
+}
 html {
     scroll-padding-top: 5rem;
 }
