@@ -1,8 +1,16 @@
 const formStatus = document.querySelector(".main_contact__form__succefull");
-
 const form = document.getElementById("contact-form");
 const messageError = form.querySelector("#Error_Mesage");
 
+
+
+/**
+ * La funcion BorderIfnot funciona para agregar un border rojo al before del sppam del elemento que no cumpla su condicion
+ * recibe como parametro :
+ *  la condicion,
+ *  el elemento a modificar 
+ *  el mensaje de Error
+*/
 function isEmail(email) {
   const regeXp =
     /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -20,8 +28,10 @@ async function handleSubmid(event) {
     name,
     "Por favor proporciona un Nombre válido"
   );
+
+  //
   const mailVerification = borderIfNot(
-    isEmail(mail.value),
+    isEmail(mail.value.trim()),
     mail,
     "Por favor proporciona un Email válido"
   );
@@ -36,11 +46,6 @@ async function handleSubmid(event) {
     "Por favor proporciona un mensaje válido (el campo no es obligatorio)"
   );
 
-  // const messageVerification = borderIfNot(
-  //   mesage.value.length === 0 || mesage.value.length > 6,
-  //   mesage,
-  //   "Mensaje"
-  // );
   if (
     nameVerification &&
     mailVerification &&
@@ -72,8 +77,7 @@ async function handleSubmid(event) {
         element.parentNode.lastElementChild.style.border = "1px solid red";
       }
 
-      // Fin de TErnario
-      messageError.textContent = msg;
+        messageError.textContent = msg;
       messageError.style.display = "block";
       element.addEventListener("focus", () => {
         if (isInput) {
